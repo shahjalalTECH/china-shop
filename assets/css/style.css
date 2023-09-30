@@ -1,0 +1,166 @@
+/*=============== Common CSS =======================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: #F15B29;
+    --second-color: #F7941D;
+    --main-font: 'Outfit', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.innovate-main-container {
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .innovate-main-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/*=============== Header Section =======================*/
+
+header {
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.innovate-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.innovate-navbar .innovate-navbar__logo img {
+    width: 80px;
+}
+
+.innovate-navbar .innovate-navbar__search-bar {
+    background: var(--main-color);
+    height: 42px;
+    width: 720px;
+    max-width: calc(100% - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    padding-left: 16px;
+    border-radius: 64px;
+}
+
+.innovate-navbar .innovate-navbar__search-bar i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.innovate-navbar .innovate-navbar__search-bar button i {
+    color: var(--main-color);
+}
+
+.innovate-navbar .innovate-navbar__search-bar button {
+    width: 60px;
+    min-width: 45px;
+    height: 38px;
+    border-radius: 64px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: unset;
+    outline: unset;
+}
+
+.innovate-navbar .innovate-navbar__search-bar input {
+    width: calc(100% - 110px);
+    background: transparent;
+    border: unset;
+    outline: unset;
+    color: #fff !important;
+    font-weight: 400;
+    font-family: var(--main-font);
+    font-size: 14px;
+}
+
+.innovate-navbar .innovate-navbar__search-bar input::placeholder {
+    color: #fff !important;
+    font-weight: 400;
+    font-family: var(--main-font);
+    font-size: 14px;
+}
+
+.innovate-navbar .innovate-navbar__icon {
+    display: flex;
+    align-items: baseline;
+}
+
+.innovate-navbar .innovate-navbar__icon a i {
+    font-size: 28px;
+    color: var(--main-color);
+}
+
+.innovate-navbar .innovate-navbar__icon a {
+    display: block;
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .innovate-navbar {
+        width: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+
+    .innovate-navbar .innovate-navbar__logo {
+        order: 1;
+        -webkit-order: 1;
+    }
+
+    .innovate-navbar {
+        flex-wrap: wrap;
+    }
+
+    .innovate-navbar .innovate-navbar__icon {
+        order: 2;
+        -webkit-order: 2;
+    }
+    
+    .innovate-navbar .innovate-navbar__search-bar {
+        order: 3;
+        -webkit-order: 3;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 12px;
+    }
+}
+
