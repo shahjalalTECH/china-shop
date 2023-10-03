@@ -12,12 +12,12 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
 }
 
 body {
     background: #f1f3f6;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
     margin: 0;
     padding: 0;
 }
@@ -71,7 +71,7 @@ header {
 }
 
 .innovate-navbar .innovate-navbar__search-bar {
-    background: var(--main-color);
+    background: var(#F15B29);
     height: 42px;
     width: 720px;
     max-width: calc(100% - 250px);
@@ -89,7 +89,7 @@ header {
 }
 
 .innovate-navbar .innovate-navbar__search-bar button i {
-    color: var(--main-color);
+    color: var(#F15B29);
 }
 
 .innovate-navbar .innovate-navbar__search-bar button {
@@ -112,14 +112,14 @@ header {
     outline: unset;
     color: #fff !important;
     font-weight: 400;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
     font-size: 14px;
 }
 
 .innovate-navbar .innovate-navbar__search-bar input::placeholder {
     color: #fff !important;
     font-weight: 400;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
     font-size: 14px;
 }
 
@@ -130,7 +130,7 @@ header {
 
 .innovate-navbar .innovate-navbar__icon a i {
     font-size: 28px;
-    color: var(--main-color);
+    color: var(#F15B29);
 }
 
 .innovate-navbar .innovate-navbar__icon a {
@@ -215,7 +215,7 @@ header {
     font-size: 14px;
     text-transform: capitalize;
     font-weight: 500;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
     color: #000;
 }
 
@@ -380,163 +380,86 @@ header {
 
 /*=============== Product section Start =======================*/
 
-.innovate-main-product-show__item {
-    min-width: 240px;
-    background: #fff;
-    border: 1px solid #fbfbfb;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    position: relative;
-    height: 100%;
-    transition: .3s ease;
-    overflow: hidden;
-    cursor: pointer;
-    padding: 0.25rem 0.25rem 0.5rem;
-}
-
-.innovate-main-product-show__item-img {
-    height: 230px;
-    width: 100% !important;
-}
-
-.innovate-main-product-show__item-img img {
-    height: 100%;
-    width: 100% !important;
-    object-fit: cover;
-    transition: all .2s ease;
-    display: block;
-    object-position: top;
-}
-
-.innovate-main-product-show__item-content {
-    padding: 0.25rem;
-}
-
-.innovate-main-product-show__item-content p {
-    font-size: 14px;
-    font-weight: 400;
-    color: #555;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin: 0 !important;
-    margin-top: 4px !important;
-}
-
-.innovate-main-product-show__item-content-star {
-    display: flex;
-    margin-top: 0.275rem;
-}
-
-.innovate-main-product-show__item-content-star i {
-    color: var(--main-color);
-}
-
-.innovate-main-product-show__item-content-price {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.innovate-main-product-show__item-content-price span:first-child {
-    color: #0e2954;
-    font-weight: 700;
-    font-size: 16px;
-    font-family: var(--main-font);
-}
-
-.innovate-main-product-show__item-content-price span:last-child {
-    font-size: 12px;
-    font-family: var(--main-font);
-    color: #777;
-    font-weight: 500;
-    padding: 0 0.25rem;
-}
-
-.innovate-main-product-show {
-    display: flex;
-}
-
-.innovate-main-product-overflow {
+.custom-width-full-240 {
     width: calc(100% - 240px);
-    overflow: auto;
 }
 
-.innovate-main-product-overflow::-webkit-scrollbar {
+.custom-scroll-bar::-webkit-scrollbar {
     width: 0px;
     height: 0px;
 }
 
-.innovate-main-product-overflow::-webkit-scrollbar-track {
+.custom-scroll-bar::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.innovate-main-product-overflow::-webkit-scrollbar-thumb {
+.custom-scroll-bar::-webkit-scrollbar-thumb {
     background: transparent;
 }
 
-.innovate-main-product-overflow::-webkit-scrollbar-thumb:hover {
+.custom-scroll-bar::-webkit-scrollbar-thumb:hover {
     background: transparent;
 }
+ 
+
+.innovate-main-product-overflow {
+    /* overflow: auto; */
+}
+
 
 .innovate-main-product-parent {
-    display: flex;
-    padding-top: 10px;
+    /* display: flex; */
+    /* padding-top: 10px; */
 }
 
 .innovate-main-product-view-all {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 240px;
-    min-width: 240px;
-    position: relative;
-    align-items: center;
-    background: #000;
-    background-color: #f15b2936;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* width: 240px; */
+    /* min-width: 240px; */
+    /* position: relative; */
+    /* align-items: center; */
+    /* background: #000; */
+    /* background-color: #f15b2936; */
 }
 
 .innovate-main-product-view-all h4 {
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-bottom: 8px;
-    font-weight: 700;
+    /* font-size: 16px; */
+    /* color: rgb(0, 0, 0); */
+    /* text-align: center; */
+    /* margin-bottom: 8px; */
+    /* font-weight: 700; */
 }
 
 .innovate-main-product-view-all button {
-    border: none;
-    border-radius: 100px;
-    color: #fff;
-    cursor: pointer;
-    justify-content: center;
-    font-size: 14px;
-    padding: 6px 25px;
-    background: var(--main-color);
+    /* border: none; */
+    /* border-radius: 100px; */
+    /* color: #fff; */
+    /* cursor: pointer; */
+    /* justify-content: center; */
+    /* font-size: 14px; */
+    /* padding: 6px 25px; */
+    /* background: var(#F15B29); */
 }
 
 @media screen and (max-width: 768px) {
     .innovate-main-product-parent {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .innovate-main-product-view-all,
     .innovate-main-product-overflow {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .innovate-main-product-view-all {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background: #fff;
-        padding: 12px;
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* background: #fff; */
+        /* padding: 12px; */
     }
 
     .innovate-hero-main-parent {
@@ -547,339 +470,334 @@ header {
 /* ============= You May Like Product section ================= */
 
 .innovate-youmaylike-product-parent {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 
 .innovate-youmaylike-product-item {
-    width: 14.28%;
-    background: #fff;
-    border: 1px solid #fbfbfb;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    height: 100%;
-    transition: all .4s ease;
-    overflow: hidden;
-    cursor: pointer;
-    padding: 0.25rem 0.25rem 0.5rem;
+    /* width: 14.28%; */
+    /* background: #fff; */
+    /* border: 1px solid #fbfbfb; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* position: relative; */
+    /* height: 100%; */
+    /* transition: all .4s ease; */
+    /* overflow: hidden; */
+    /* cursor: pointer; */
+    /* padding: 0.25rem 0.25rem 0.5rem; */
 }
 
 .innovate-youmaylike-product-item__img {
-    width: 100%;
-    height: 230px;
+    /* width: 100%; */
+    /* height: 230px; */
 }
 
 .innovate-youmaylike-product-item__img img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
+    /* width: 100%; */
+    /* object-fit: cover; */
+    /* height: 100%; */
 }
 
 .innovate-youmaylike-product-main {
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 .innovate-youmaylike-product-title {
-    background: #fff;
-    padding: 15px;
+    /* background: #fff; */
+    /* padding: 15px; */
 }
 
 .innovate-youmaylike-product-title h3 {
-    margin: 0 !important;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: var(--main-font);
-    color: #000;
+    /* margin: 0 !important; */
+    /* text-align: center; */
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    /* font-family: var('Outfit'); */
+    /* color: #000; */
 }
 
 .innovate-youmaylike-product-button button {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-    border: none;
-    padding: 8px 25px;
-    border-radius: 100px;
-    color: #fff;
-    cursor: pointer;
-    background: var(--main-color);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    font-size: 16px;
-    font-family: var(--main-font);
+    justify-content: center; */
+    /* border: none; */
+    /* padding: 8px 25px; */
+    /* border-radius: 100px; */
+    /* color: #fff; */
+    /* cursor: pointer; */
+    /* background: var(#F15B29); */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-top: 30px; */
+    /* font-size: 16px; */
+    /* font-family: var('Outfit'); */
 }
 
 @media screen and (max-width: 1670px) {
     .innovate-youmaylike-product-item {
-        width: 16.66%;
-    }
-}
-
-@media screen and (max-width: 1670px) {
-    .innovate-youmaylike-product-item {
-        width: 16.66%;
+        /* width: 16.66%; */
     }
 }
 
 @media screen and (max-width: 1400px) {
     .innovate-youmaylike-product-item {
-        width: 20%;
+        /* width: 20%; */
     }
 }
 
 @media screen and (max-width: 1200px) {
     .innovate-youmaylike-product-item {
-        width: 25%;
+        /* width: 25%; */
     }
 }
 
 @media screen and (max-width: 992px) {
     .innovate-youmaylike-product-item {
-        width: 33.33%;
+        /* width: 33.33%; */
     }
 }
 
 @media screen and (max-width: 768px) {
     .innovate-youmaylike-product-item {
-        width: 50%;
+        /* width: 50%; */
     }
 }
 
 @media screen and (max-width: 576px) {
     .innovate-youmaylike-product-item__img {
-        height: 160px;
+        /* height: 160px; */
     }
 }
 
 /* ============= Footer section ================= */
 
 footer {
-    background: #fff;
-    margin-top: 30px;
+    /* background: #fff;
+    margin-top: 30px; */
 }
 
 footer .innovate-footer-parent {
-    display: flex;
-    padding: 30px 0;
+    /* display: flex; */
+    /* padding: 30px 0; */
 }
 
 .innovate-footer-item {
-    width: 25%;
+    /* width: 25%; */
 }
 
 .innovate-footer-address {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .innovate-footer-address .innovate-footer-address__logo img {
-    width: 100px;
-    display: block;
+    /* width: 100px;
+    display: block; */
 }
 
 .innovate-footer-address .innovate-footer-address__logo {
-    display: block;
-    margin-bottom: 8px;
+    /* display: block;
+    margin-bottom: 8px; */
 }
 
 .innovate-footer-address span,
 .innovate-footer-address span a {
-    font-size: 15px;
-    color: #111;
-    font-family: var(--main-font);
-    font-weight: 400;
-    display: block;
+    /* font-size: 15px; */
+    /* color: #111; */
+    /* font-family: var('Outfit'); */
+    /* font-weight: 400; */
+    /* display: block; */
 }
 
 .innovate-footer-address span a {
-    margin-left: 6px;
+    /* margin-left: 6px; */
 }
 
 .innovate-footer-address span {
-    margin-top: 6px;
-    display: flex;
-    flex-wrap: wrap;
+    /* margin-top: 6px; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 
 .innovate-footer-app h3,
 .innovate-footer-link h3 {
-    font-size: 17px;
-    font-weight: 700;
+    /* font-size: 17px; */
+    /* font-weight: 700;
     color: #111;
     text-transform: uppercase;
-    margin-top: 5px;
+    margin-top: 5px; */
 }
 
 .innovate-footer-link ul {
-    margin: 0 !important;
-    padding: 0 !important;
+    /* margin: 0 !important;
+    padding: 0 !important; */
 }
 
 .innovate-footer-link ul li {
-    margin-bottom: 7px;
+    /* margin-bottom: 7px; */
 }
 
 .innovate-footer-link ul li a {
-    color: #111;
-    font-family: var(--main-font);
-    font-size: 16px;
+    /* color: #111;
+    font-family: var('Outfit');
+    font-size: 16px; */
 }
 
 .innovate-footer-app a img {
-    width: 120px;
+    /* width: 120px; */
 }
 
 .innovate-footer-app a {
-    display: block;
+    /* display: block;
     margin-bottom: 7px;
-    margin-top: 3px;
+    margin-top: 3px; */
 }
 
 .innovate-footer-app {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .innovate-footer-item {
-    padding: 0px 8px;
+    /* padding: 0px 8px; */
 }
 
 .innovate-footer-address-social {
-    margin: 0 !important;
+    /* margin: 0 !important;
     padding: 0 !important;
     display: flex;
     align-items: center;
-    margin-top: 15px !important;
+    margin-top: 15px !important; */
 }
 
 .innovate-footer-address-social li a {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     height: 32px;
     width: 32px;
-    background: var(--main-color);
-    border-radius: 50%;
-    margin-right: 7px;
-    color: #fff;
+    background: var(#F15B29);
+    border-radius: 50%; */
+    /* margin-right: 7px;
+    color: #fff; */
 }
 
 .innovate-footer-copyright-parent {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 15px; */
 }
 
 .innovate-footer-copyright-parent p {
-    margin-left: 5px;
+    /* margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 0;
     margin-top: 5px;
     font-size: 14px;
     font-weight: 400;
-    font-family: var(--main-font);
+    font-family: var('Outfit'); */
 }
 
 .innovate-footer-copyright-parent p a {
-    font-weight: 600;
-    color: var(--main-color);
+    /* font-weight: 600;
+    color: var(#F15B29); */
 }
 
 @media screen and (max-width: 992px) {
     .innovate-footer-address span a {
-        margin-left: 0px !important;
+        /* margin-left: 0px !important; */
     }
 }
 
 @media screen and (max-width: 768px) {
     footer .innovate-footer-parent {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
     .innovate-footer-item {
-        width: 50%;
-        margin-top: 20px;
+        /* width: 50%; */
+        /* margin-top: 20px; */
     }
 
     footer {
-        margin-bottom: 64px;
+        /* margin-bottom: 64px; */
+
     }
 }
 
 /* ============= Footer section ================= */
 
 .innovate-sticky-footer {
-    position: fixed;
+    /* position: fixed;
     bottom: -1px;
     left: 0;
-    right: 0;
-    z-index: 2;
+    right: 0; */
+    /* z-index: 2;
     height: 64px;
     margin: 0;
     background-color: #fff;
-    z-index: 11000;
+    z-index: 11000; */
     box-shadow: 0 0 0 #fff, 0 15px 30px #999;
-    padding: 13px;
-    display: none;
+    /* padding: 13px;
+    display: none; */
 }
 
 .innovate-sticky-footer-parent {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
-    width: 100%;
+    width: 100%; */
 }
 
 .innovate-sticky-footer-parent li {
-    width: 20%;
+    /* width: 20%; */
 }
 
 .innovate-sticky-footer-parent li a {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .innovate-sticky-footer-parent li a span {
-    color: #333;
+    /* color: #333;
     font-weight: 400;
     margin-top: 4px;
     font-size: 14px;
-    display: block;
+    display: block; */
 }
 
 .innovate-sticky-footer-middle-img a {
-    background: var(--main-color);
+    /* background: var(#F15B29);
     height: 60px;
     width: 60px;
     border-radius: 50%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
 }
 
 .innovate-sticky-footer-middle-img {
-    position: relative;
-    top: -5px;
+    /* position: relative;
+    top: -5px; */
 }
 
 .innovate-sticky-footer-middle-img a img {
-    height: 36px;
+    /* height: 36px;
     width: 36px;
-    object-fit: contain;
+    object-fit: contain; */
 }
 
 @media screen and (max-width: 768px) {
     .innovate-sticky-footer {
-        display: block;
+        /* display: block; */
     }
 }
 
@@ -938,7 +856,7 @@ footer .innovate-footer-parent {
 .innovate-product-page-shop-detailes-title h4 {
     font-size: 18px;
     font-weight: 700;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
     margin-top: 5px !important;
 }
 
@@ -1005,7 +923,7 @@ footer .innovate-footer-parent {
 .innovate-product-page-shop-detailes__info-range-price {
     color: #000;
     font-size: 20px;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
     margin-bottom: 5px;
     text-align: center;
 }
@@ -1017,7 +935,7 @@ footer .innovate-footer-parent {
 }
 
 .innovate-product-page-shop-detailes__info-range-item-active {
-    background: var(--main-color);
+    background: var(#F15B29);
 }
 
 .innovate-product-page-shop-detailes__info-range-item-active * {
@@ -1040,7 +958,7 @@ footer .innovate-footer-parent {
 
 .innovate-product-page-shop-detailes__info-color-item.active,
 .innovate-product-page-shop-detailes__info-color-item:hover {
-    border: 2px solid var(--main-color);
+    border: 2px solid var(#F15B29);
 }
 
 .innovate-product-page-shop-detailes__info-color-item img {
@@ -1054,7 +972,7 @@ footer .innovate-footer-parent {
     margin-bottom: 7px;
     font-size: 18px;
     font-weight: 600;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
 }
 
 .innovate-product-page-shop-detailes__info-table {
@@ -1071,7 +989,7 @@ footer .innovate-footer-parent {
     border-collapse: collapse;
     border-radius: 6px;
     overflow: hidden;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
 }
 
 .innovate-product-page-shop-detailes__info-table td,
@@ -1124,7 +1042,7 @@ footer .innovate-footer-parent {
 .innovate-product-page-shop-detailes__info-shipping-ammount {
     display: flex;
     flex-direction: column;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
 }
 
 .innovate-product-page-shop-detailes__info-shipping-ammount span:last-child {
@@ -1176,11 +1094,11 @@ footer .innovate-footer-parent {
 
 .innovate-product-page-shop-detailes__info-btn-parent .info-btn-add-cart {
     color: #fff;
-    background: var(--main-color);
+    background: var(#F15B29);
 }
 
 .innovate-product-page-shop-detailes__info-btn-parent .info-btn-buy-now {
-    background: var(--second-color);
+    background: var(#F7941D);
     color: #fff;
 }
 
@@ -1199,7 +1117,7 @@ footer .innovate-footer-parent {
 .innovate-product-page-shop-detailes__info-group-data b,
 .innovate-product-page-shop-detailes__info-group-data span {
     font-size: 16px;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
 }
 
 .innovate-product-page-shop-detailes__info-visit-store {
@@ -1217,7 +1135,7 @@ footer .innovate-footer-parent {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--main-color);
+    background: var(#F15B29);
     font-size: 14px;
     margin-right: 20px;
     cursor: pointer;
@@ -1235,7 +1153,7 @@ footer .innovate-footer-parent {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background: var(--main-color);
+    background: var(#F15B29);
     outline: none;
     border: unset;
     color: #fff;
@@ -1277,7 +1195,7 @@ footer .innovate-footer-parent {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
     border: unset;
     outline: unset;
     background: transparent;
@@ -1288,7 +1206,7 @@ footer .innovate-footer-parent {
 }
 
 .innovate-product-page-shop-tab .innovate-tab-menu ul li button.active-a {
-    border-bottom: 4px solid var(--main-color);
+    border-bottom: 4px solid var(#F15B29);
 }
 
 .innovate-product-page-shop-tab .tab {
@@ -1297,7 +1215,7 @@ footer .innovate-footer-parent {
 
 .innovate-product-page-shop-tab .tab h2 {
     color: #000;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
     font-weight: 700;
     font-size: 20px;
 }
@@ -1306,7 +1224,7 @@ footer .innovate-footer-parent {
     color: #000;
     font-size: 16px;
     font-weight: 400;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
 }
 
 .innovate-product-page-shop-tab .tab-active {
@@ -1560,7 +1478,7 @@ footer .innovate-footer-parent {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: var(--main-color);
+    background: var(#F15B29);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1592,12 +1510,12 @@ footer .innovate-footer-parent {
     font-size: 14px;
     font-weight: 500;
     margin: 0;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
 }
 
 .innovate-cart-page__summary-item-content p {
     font-size: 14px;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
     margin: 0;
 }
 
@@ -1613,7 +1531,7 @@ footer .innovate-footer-parent {
 }
 
 .innovate-cart-page__summary-item-trash i {
-    color: var(--main-color);
+    color: var(#F15B29);
 }
 
 .innovate-cart-page__summary-item-double-span {
@@ -1641,7 +1559,7 @@ footer .innovate-footer-parent {
     border-bottom: 1px solid #f1f3f6;
     font-size: 18px;
     font-weight: 600;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
 }
 
 .innovate-cart-page__summary-cart {
@@ -1663,7 +1581,7 @@ footer .innovate-footer-parent {
 .innovate-cart-page__summary-cart-content span {
     font-size: 14px;
     font-weight: 400;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
 }
 
 .innovate-cart-btn {
@@ -1674,11 +1592,11 @@ footer .innovate-footer-parent {
     padding: 15px;
     outline: unset;
     border: unset;
-    background: var(--main-color);
+    background: var(#F15B29);
     color: #fff;
     font-size: 15px;
     font-weight: 500;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
     border-radius: 100px;
     cursor: pointer;
     word-spacing: 1px;
@@ -1739,7 +1657,7 @@ footer .innovate-footer-parent {
 .innovate-checkout-form-item label {
     font-size: 16px;
     font-weight: 400;
-    font-family: var(--main-font);
+    font-family: var('Outfit');
 }
 
 .innovate-checkout-form-item label span {
@@ -1753,7 +1671,7 @@ footer .innovate-footer-parent {
 .innovate-checkout-form-item input:focus,
 .innovate-checkout-form-item select:focus,
 .innovate-checkout-form-item textarea:focus {
-    border-color: var(--main-color);
+    border-color: var(#F15B29);
 }
 
 .innovate-checkout-form-item-full {
