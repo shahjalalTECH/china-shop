@@ -803,7 +803,7 @@ footer .innovate-footer-parent {
 }
 
 .innovate-product-page-shop-detailes {
-    background: #fff;
+    /* background: #fff; */
     width: calc(100% - 250px);
 }
 
@@ -828,10 +828,10 @@ footer .innovate-footer-parent {
 }
 
 .innovate-product-page-shop-detailes {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     padding: 15px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .innovate-product-page-shop-detailes-title {
@@ -839,47 +839,47 @@ footer .innovate-footer-parent {
 }
 
 .innovate-product-page-shop-detailes-title h4 {
-    font-size: 18px;
+    /* font-size: 18px;
     font-weight: 700;
     font-family: var('Outfit');
-    margin-top: 5px !important;
+    margin-top: 5px !important; */
 }
 
 .innovate-product-page-shop-detailes__img {
-    width: 40%;
+    /* width: 40%; */
 }
 
 .innovate-product-page-shop-detailes__info {
-    width: calc(60% - 20px);
+    /* width: calc(60% - 20px); */
 }
 
 .innovate-product-page-shop-detailes__img-preview {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
 }
 
 .innovate-product-page-shop-detailes__img-preview img {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; */
 }
 
 .innovate-product-page-shop-detailes__img-all {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
-    overflow: auto;
+    overflow: auto; */
 }
 
 .innovate-product-page-shop-detailes__img-item {
-    width: 68px;
+    /* width: 68px;
     height: 68px;
     margin-right: 10px;
     margin-bottom: 10px;
-    padding: 3px;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 3px; */
+    /* border: 1px solid #eee; */
+    /* border-radius: 4px;
+    cursor: pointer; */
 }
 
 .innovate-product-page-shop-detailes__img-item img {
@@ -895,94 +895,94 @@ footer .innovate-footer-parent {
 }
 
 .innovate-product-page-shop-detailes__info-range-item {
-    padding: 10px;
+    /* padding: 10px;
     border-radius: 4px;
     background: #eee;
     display: flex;
-    flex-direction: column;
-    width: calc(33.33% - 8px);
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; */
+    /* width: calc(33.33% - 8px); */
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .innovate-product-page-shop-detailes__info-range-price {
-    color: #000;
+    /* color: #000;
     font-size: 20px;
     font-family: var('Outfit');
     margin-bottom: 5px;
-    text-align: center;
+    text-align: center; */
 }
 
 .innovate-product-page-shop-detailes__info-range-qty {
-    text-align: center;
+    /* text-align: center;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 400; */
 }
 
 .innovate-product-page-shop-detailes__info-range-item-active {
-    background: var(#F15B29);
+    /* background: var(#F15B29); */
 }
 
 .innovate-product-page-shop-detailes__info-range-item-active * {
-    color: #fff;
+    /* color: #fff; */
 }
 
 .innovate-product-page-shop-detailes__info-color-all {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .innovate-product-page-shop-detailes__info-color-item {
-    width: 50px;
+    /* width: 50px;
     height: 50px;
     margin-right: 8px;
     margin-bottom: 8px;
     border-radius: 6px;
-    border: 2px solid #eee;
+    border: 2px solid #eee; */
 }
 
 .innovate-product-page-shop-detailes__info-color-item.active,
 .innovate-product-page-shop-detailes__info-color-item:hover {
-    border: 2px solid var(#F15B29);
+    /* border: 2px solid var(#F15B29); */
 }
 
 .innovate-product-page-shop-detailes__info-color-item img {
-    padding: 3px;
+    /* padding: 3px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; */
 }
 
 .innovate-product-page-shop-detailes__info-color-title {
-    margin-bottom: 7px;
+    /* margin-bottom: 7px;
     font-size: 18px;
     font-weight: 600;
-    font-family: var('Outfit');
+    font-family: var('Outfit'); */
 }
 
 .innovate-product-page-shop-detailes__info-table {
-    border-radius: 6px;
+    /* border-radius: 6px;
     overflow: hidden;
     border: 1px solid #f2f2f2;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 }
 
 .innovate-product-page-shop-detailes__info-table table {
-    width: 100%;
-    font-size: 14px;
-    font-weight: 500 !important;
-    border-collapse: collapse;
-    border-radius: 6px;
+    /* width: 100%;
+    font-size: 14px; */
+    /* font-weight: 500 !important; */
+    /* border-collapse: collapse; */
+    /* border-radius: 6px;
     overflow: hidden;
-    font-family: var('Outfit');
+    font-family: var('Outfit'); */
 }
 
 .innovate-product-page-shop-detailes__info-table td,
 .innovate-product-page-shop-detailes__info-table th {
-    padding: 16px;
+    /* padding: 16px;
     text-align: left;
     font-size: 14px;
-    font-weight: 500 !important;
+    font-weight: 500 !important; */
 }
 
 .innovate-product-page-shop-detailes__info-table thead tr {
@@ -998,12 +998,12 @@ footer .innovate-footer-parent {
 }
 
 .innovate-product-page-shop-detailes__info-table.three-column-table thead th {
-    width: 33.33%;
-    font-weight: 600 !important;
+    /* width: 33.33%;
+    font-weight: 600 !important; */
 }
 
 .innovate-product-page-shop-detailes__info-table.three-column-table {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .innovate-product-page-shop-detailes__info-shipping-charge {
@@ -1279,8 +1279,8 @@ footer .innovate-footer-parent {
 }
 
 .innovate-product-page-shop-similar-product .innovate-youmaylike-product-parent {
-    height: 200px;
-    min-height: auto;
+    /* height: 200px;
+    min-height: auto; */
 }
 
 .innovate-product-page-shop-similar-product::-webkit-scrollbar {
@@ -1345,7 +1345,7 @@ footer .innovate-footer-parent {
     }
     
     .innovate-product-page-shop-detailes {
-        order: 1;
+        /* order: 1; */
     }
     
     .innovate-product-page-shop-left {
@@ -1374,9 +1374,9 @@ footer .innovate-footer-parent {
     }
 
     .innovate-product-page-shop-detailes__info-range-item {
-        width: 100%;
+        /* width: 100%;
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 5px; */
     }
 
     .innovate-product-page-shop-detailes__info-btn-parent button {
