@@ -27,31 +27,28 @@
 </head>
 
 <body>
-
-    <!-- ============= Common class Start ================= -->
-    <p class="text-sm font-normal text-[#555] m-0 mt-1 line-clamp-1"></p>
     <!-- ============= Header Start ================= -->
-    <header>
-        <nav class="innovate-navbar">
-            <div class="innovate-navbar__logo">
+    <header class="h-16 fixed top-0 left-0 right-0 z-50 bg-white max-[768px]:h-auto max-[768px]:pt-3 max-[768px]:pb-3">
+        <nav class="innovate-main-container pl-5 pr-5 max-[768px]:flex-wrap flex justify-between items-center h-full ml-auto mr-auto">
+            <div class="max-[768px]:order-1">
                 <a href="">
-                    <img src="assets/images/png-logo.png" alt="">
+                    <img class="w-[80px]" src="assets/images/png-logo.png" alt="">
                 </a>
             </div>
-            <div class="innovate-navbar__search-bar">
-                <i class="fa-solid fa-camera"></i>
-                <input type="text" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="innovate-navbar__search-bar h-[42px] bg-[#F15B29] flex items-center justify-between p-[3px] pl-4 rounded-[64px] max-[768px]:order-3 max-[768px]:w-full max-[768px]:max-w-full max-[768px]:mt-3">
+                <i class="fa-solid fa-camera text-xl text-white block pr-3.5"></i>
+                <input class="border-0 outline-none text-white font-normal font-['Outfit'] text-sm bg-transparent placeholder:text-white placeholder:font-normal placeholder:font-['Outfit'] placeholder:text-sm grow" type="text" placeholder="Search">
+                <button class="w-16 h-[38px] rounded-[64px] bg-white flex items-center justify-center border-0 outline-none" type="submit"><i class="fa-solid fa-magnifying-glass text-[#F15B29]"></i></button>
             </div>
-            <div class="innovate-navbar__icon">
-                <a href="">
-                    <i class="fa-solid fa-cart-shopping"></i>
+            <div class="flex items-baseline max-[768px]:order-2">
+                <a href="" class="block ml-4">
+                    <i class="fa-solid fa-cart-shopping text-[28px] text-[#F15B29]"></i>
                 </a>
-                <a href="">
-                    <i class="fa-regular fa-heart"></i>
+                <a href="" class="block ml-4">
+                    <i class="fa-regular fa-heart text-[28px] text-[#F15B29]"></i>
                 </a>
-                <a href="">
-                    <i class="fa-regular fa-user"></i>
+                <a href="" class="block ml-4">
+                    <i class="fa-regular fa-user text-[28px] text-[#F15B29]"></i>
                 </a>
             </div>
         </nav>
@@ -60,174 +57,191 @@
 
     <!-- ============= Hero section Start ================= -->
     <section class="innovate-main-container">
-        <div class="innovate-hero-main-parent">
-            <div class="innovate-left-product">
-                <div class="innovate-left-product__flex">
-                    <a href="">
-                        <img src="assets/images/left-product (1).png" alt="">
-                        <span class="main-color">Bags</span>
+        <div class="relative z-1 flex mt-16 max-[768px]:flex-col max-[768px]:mt-[124px]">
+            <div class="innovate-scrollbar-hidden bg-white overflow-auto w-[240px] scroll-smooth max-[768px]:w-full max-[768px]:ml-0 max-[768px]:order-2 max-[768px]:mt-1">
+                <div class="h-auto min-h-[auto] max-[768px]:flex-row max-[768px]:flex-wrap flex flex-col py-1.5 px-3 h-[200px] min-h-[auto]">
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (2).png" alt="">
-                        <span>Shoes</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (3).png" alt="">
-                        <span>Jewelry</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (4).png" alt="">
-                        <span>Makeup</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (5).png" alt="">
-                        <span>Men’s Clothing</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (6).png" alt="">
-                        <span>Girl’s Clothing</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (7).png" alt="">
-                        <span>Baby Items</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (9).png" alt="">
-                        <span>Sunglass</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (10).png" alt="">
-                        <span>Accessories</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (11).png" alt="">
-                        <span>Sports & Fitness</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (12).png" alt="">
-                        <span>Sports & Fitness</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (13).png" alt="">
-                        <span>Watches</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
-                    <a href="">
-                        <img src="assets/images/left-product (14).png" alt="">
-                        <span>Traveling</span>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
+                    </a>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
+                    </a>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
+                    </a>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
+                    </a>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
+                    </a>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
+                    </a>
+                    <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
+                        <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
+                        <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
                     </a>
                 </div>
             </div>
-            <div class="innovate-hero-main-content">
+            <div class="innovate-hero-main-content flex flex-col ml-2.5 max-[768px]:w-full max-[768px]:ml-0 max-[768px]:order-1 ">
                 <div class="innovate-hero__slick-parent">
-                    <div class="innovate-hero__slick-child">
-                        <img src="assets/images/banner (1).png" alt="">
+                    <div>
+                        <img class="h-auto block pr-1" src="assets/images/banner (1).png" alt="">
                     </div>
-                    <div class="innovate-hero__slick-child">
-                        <img src="assets/images/banner (2).png" alt="">
+                    <div>
+                        <img class="h-auto block pr-1" src="assets/images/banner (2).png" alt="">
                     </div>
-                    <div class="innovate-hero__slick-child">
-                        <img src="assets/images/banner (3).png" alt="">
+                    <div>
+                        <img class="h-auto block pr-1" src="assets/images/banner (3).png" alt="">
                     </div>
                 </div>
                 <div class="innovate-hero__product">
-                    <div class="innovate-hero__product-overflow">
-                        <div class="innovate-hero__product-flex">
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                    <div class="innovate-scrollbar-hidden w-full overflow-auto scroll-smooth">
+                        <div class="bg-white flex mt-1">
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
                                 </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
-                                </div>
-                            </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
-                                </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
                                 </div>
                             </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
                                 </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
-                                </div>
-                            </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
-                                </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
                                 </div>
                             </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
                                 </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
-                                </div>
-                            </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
-                                </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
                                 </div>
                             </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
                                 </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
-                                </div>
-                            </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
-                                </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
                                 </div>
                             </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
                                 </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
-                                </div>
-                            </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
-                                </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
                                 </div>
                             </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
                                 </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
-                                </div>
-                            </div>
-                            <div class="innovate-hero__product-item">
-                                <div class="innovate-hero__product-item__img">
-                                    <img src="assets/images/left-product__4_-removebg-preview.png" alt="">
-                                </div>
-                                <div class="innovate-hero__product-item__content">
-                                    <p>২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
                                 </div>
                             </div>
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center justify-center w-[260px] min-w-[260px] p-4 pt-6 bg-white max-[768px]:w-[175px] max-[768px]:min-w-[175px]">
+                                <div class="w-20 h-20 bg-[#f7951d46] rounded-[20px] flex items-center justify-center">
+                                    <img class="w-[85%] h-[85%] object-contain" src="assets/images/left-product__4_-removebg-preview.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-sm mt-4 mb-2 line-clamp-1 max-[768px]:text-center max-[768px]:line-clamp-2">২০ কোটি পণ্য ও ১০ লাখ সেলার</p>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -1963,8 +1977,6 @@
                         </div>
                     </div>
                 </a>
-                
-
             </div>
             <div class="">
                 <button class="flex justify-center items-center border-0 px-6 py-2 bg-[#F15B29] rounded-[100px] text-white cursor-pointer ml-auto mr-auto mt-7 text-base font-['Outfit'] " type="button">Load More</button>
@@ -2057,7 +2069,7 @@
                 </a>
             </li>
             <li class="innovate-sticky-footer-middle-img w-1/5 relative top-[-5px]">
-                <a href="" class="flex items-center justify-center flex-col h-15 w-15 ml-auto rounded-full mr-auto bg-[#F15B29]" style="width: 60px !important; height: 60px !important;">
+                <a href="" class="flex items-center justify-center flex-col h-16 w-15 ml-auto rounded-full mr-auto bg-[#F15B29]" style="width: 60px !important; height: 60px !important;">
                     <img class="h-9 w-9 object-contain" src="assets/images/midddle-icon.svg" alt="">
                 </a>
             </li>
