@@ -12,18 +12,6 @@
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                container: {
-                    center: true,
-                    padding: {
-                        DEFAULT: '20px',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -38,7 +26,7 @@
             <div class="innovate-navbar__search-bar h-[42px] bg-[#F15B29] flex items-center justify-between p-[3px] pl-4 rounded-[64px] max-[768px]:order-3 max-[768px]:w-full max-[768px]:max-w-full max-[768px]:mt-3">
                 <i class="fa-solid fa-camera text-xl text-white block pr-3.5"></i>
                 <input class="border-0 outline-none text-white font-normal font-['Outfit'] text-sm bg-transparent placeholder:text-white placeholder:font-normal placeholder:font-['Outfit'] placeholder:text-sm grow" type="text" placeholder="Search">
-                <button class="w-16 h-[38px] rounded-[64px] bg-white flex items-center justify-center border-0 outline-none" type="submit"><i class="fa-solid fa-magnifying-glass text-[#F15B29]"></i></button>
+                <button class="rounded-[64px] bg-white flex items-center justify-center border-0 outline-none" style="height: 38px; width: 64px;" type="submit"><i class="fa-solid fa-magnifying-glass text-[#F15B29]"></i></button>
             </div>
             <div class="flex items-baseline max-[768px]:order-2">
                 <a href="" class="block ml-4">
@@ -59,7 +47,7 @@
     <section class="innovate-main-container">
         <div class="relative z-1 flex mt-16 max-[768px]:flex-col max-[768px]:mt-[124px]">
             <div class="innovate-scrollbar-hidden bg-white overflow-auto w-[240px] scroll-smooth max-[768px]:w-full max-[768px]:ml-0 max-[768px]:order-2 max-[768px]:mt-1">
-                <div class="h-auto min-h-[auto] max-[768px]:flex-row max-[768px]:flex-wrap flex flex-col py-1.5 px-3 h-[200px] min-h-[auto]">
+                <div class="max-[768px]:flex-row max-[768px]:flex-wrap flex flex-col py-1.5 px-3 custom-scrollbar-height">
                     <a href="" class="flex items-center p-1.5 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:w-2/6">
                         <img class="w-11 h-11 object-contain mr-3 block max-[768px]:mr-0" src="assets/images/left-product (1).png" alt="">
                         <span class="max-[768px]:text-center text-sm uppercase font-medium font-['Outfit'] text-black">Bags</span>
@@ -138,7 +126,7 @@
                     </a>
                 </div>
             </div>
-            <div class="innovate-hero-main-content flex flex-col ml-2.5 max-[768px]:w-full max-[768px]:ml-0 max-[768px]:order-1 ">
+            <div class="innovate-hero-main-content flex flex-col ml-2.5 max-[768px]:w-full max-[768px]:ml-0 max-[768px]:order-1">
                 <div class="innovate-hero__slick-parent">
                     <div>
                         <img class="h-auto block pr-1" src="assets/images/banner (1).png" alt="">
@@ -254,10 +242,10 @@
     <section class="innovate-main-container">
         <div class="flex pt-2.5 max-[768px]:flex-col">
             <a href="" class="max-[768px]:w-full max-[768px]:bg-white max-[768px]:flex-row max-[768px]:justify-between flex flex-col justify-center w-60 min-w-60 items-center relative bg-[#f15b2936] max-[768px]:p-3">
-                <h4 class="text-base font-bold mt-2 text-center text-black">SHOES</h4>
+                <h4 class="text-base font-bold mt-2 text-center text-black mb-2">SHOES</h4>
                 <button class="justify-center text-sm text-white cursor-pointer rounded-[100px] border-0 py-1.5 px-[25px] bg-[#F15B29]" type="button">View All</button>
             </a>
-            <div class="custom-width-full-240 max-[768px]:w-full overflow-auto custom-scroll-bar">
+            <div class="custom-width-full-240 max-[768px]:w-full overflow-auto innovate-scrollbar-hidden">
                 <div class="flex">
                     <a href="" class="flex justify-around items-center flex-col relative h-full overflow-hidden cursor-pointer min-w-[240px] bg-white border border-[#fbfbfb] px-1">
                         <div class="h-56 w-full">
@@ -525,10 +513,10 @@
         </div>
         <div class="flex pt-2.5 max-[768px]:flex-col">
             <a href="" class="max-[768px]:w-full max-[768px]:bg-white max-[768px]:flex-row max-[768px]:justify-between flex flex-col justify-center w-60 min-w-60 items-center relative bg-[#f15b2936] max-[768px]:p-3">
-                <h4 class="text-base font-bold mt-2 text-center text-black">SHOES</h4>
+                <h4 class="text-base font-bold mt-2 text-center text-black mb-2">SHOES</h4>
                 <button class="justify-center text-sm text-white cursor-pointer rounded-[100px] border-0 py-1.5 px-[25px] bg-[#F15B29]" type="button">View All</button>
             </a>
-            <div class="custom-width-full-240 max-[768px]:w-full overflow-auto custom-scroll-bar">
+            <div class="custom-width-full-240 max-[768px]:w-full overflow-auto innovate-scrollbar-hidden">
                 <div class="flex">
                     <a href="" class="flex justify-around items-center flex-col relative h-full overflow-hidden cursor-pointer min-w-[240px] bg-white border border-[#fbfbfb] px-1">
                         <div class="h-56 w-full">
@@ -796,10 +784,10 @@
         </div>
         <div class="flex pt-2.5 max-[768px]:flex-col">
             <a href="" class="max-[768px]:w-full max-[768px]:bg-white max-[768px]:flex-row max-[768px]:justify-between flex flex-col justify-center w-60 min-w-60 items-center relative bg-[#f15b2936] max-[768px]:p-3">
-                <h4 class="text-base font-bold mt-2 text-center text-black">SHOES</h4>
+                <h4 class="text-base font-bold mt-2 text-center text-black mb-2">SHOES</h4>
                 <button class="justify-center text-sm text-white cursor-pointer rounded-[100px] border-0 py-1.5 px-[25px] bg-[#F15B29]" type="button">View All</button>
             </a>
-            <div class="custom-width-full-240 max-[768px]:w-full overflow-auto custom-scroll-bar">
+            <div class="custom-width-full-240 max-[768px]:w-full overflow-auto innovate-scrollbar-hidden">
                 <div class="flex">
                     <a href="" class="flex justify-around items-center flex-col relative h-full overflow-hidden cursor-pointer min-w-[240px] bg-white border border-[#fbfbfb] px-1">
                         <div class="h-56 w-full">
@@ -1067,10 +1055,10 @@
         </div>
         <div class="flex pt-2.5 max-[768px]:flex-col">
             <a href="" class="max-[768px]:w-full max-[768px]:bg-white max-[768px]:flex-row max-[768px]:justify-between flex flex-col justify-center w-60 min-w-60 items-center relative bg-[#f15b2936] max-[768px]:p-3">
-                <h4 class="text-base font-bold mt-2 text-center text-black">SHOES</h4>
+                <h4 class="text-base font-bold mt-2 text-center text-black mb-2">SHOES</h4>
                 <button class="justify-center text-sm text-white cursor-pointer rounded-[100px] border-0 py-1.5 px-[25px] bg-[#F15B29]" type="button">View All</button>
             </a>
-            <div class="custom-width-full-240 max-[768px]:w-full overflow-auto custom-scroll-bar">
+            <div class="custom-width-full-240 max-[768px]:w-full overflow-auto innovate-scrollbar-hidden">
                 <div class="flex">
                     <a href="" class="flex justify-around items-center flex-col relative h-full overflow-hidden cursor-pointer min-w-[240px] bg-white border border-[#fbfbfb] px-1">
                         <div class="h-56 w-full">
@@ -1338,10 +1326,10 @@
         </div>
         <div class="flex pt-2.5 max-[768px]:flex-col">
             <a href="" class="max-[768px]:w-full max-[768px]:bg-white max-[768px]:flex-row max-[768px]:justify-between flex flex-col justify-center w-60 min-w-60 items-center relative bg-[#f15b2936] max-[768px]:p-3">
-                <h4 class="text-base font-bold mt-2 text-center text-black">SHOES</h4>
+                <h4 class="text-base font-bold mt-2 text-center text-black mb-2">SHOES</h4>
                 <button class="justify-center text-sm text-white cursor-pointer rounded-[100px] border-0 py-1.5 px-[25px] bg-[#F15B29]" type="button">View All</button>
             </a>
-            <div class="custom-width-full-240 max-[768px]:w-full overflow-auto custom-scroll-bar">
+            <div class="custom-width-full-240 max-[768px]:w-full overflow-auto innovate-scrollbar-hidden">
                 <div class="flex">
                     <a href="" class="flex justify-around items-center flex-col relative h-full overflow-hidden cursor-pointer min-w-[240px] bg-white border border-[#fbfbfb] px-1">
                         <div class="h-56 w-full">

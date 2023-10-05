@@ -7,8 +7,8 @@
 }
 
 body {
-    background: #f1f3f6;
     font-family: 'Outfit';
+    background: #f1f3f6;;
 }
 
 .innovate-main-container {
@@ -17,16 +17,18 @@ body {
     margin-right: auto;
 }
 
-@media screen and (max-width: 768px) {
-    .innovate-main-container {
-        width: 100%;
-        max-width: 100%;
-    }
+.custom-scrollbar-height {
+    height: 200px;
+    min-height: auto;
 }
 
 .innovate-navbar__search-bar {
     width: 720px;
     max-width: calc(100% - 250px);
+}
+
+.innovate-hero-main-content {
+    width: calc(100% - 250px);
 }
 
 .innovate-scrollbar-hidden::-webkit-scrollbar {
@@ -46,27 +48,11 @@ body {
     background: transparent;
 }
 
-
 .innovate-hero__product-flex {
     background: #fff;
     display: flex;
     margin-top: 3px;
 }
-
-@media screen and (max-width: 768px) {
-
-    .innovate-left-product__parent {
-        overflow: unset;
-        height: auto;
-    }
-
-    .innovate-left-product__flex {
-        height: unset;
-        min-height: unset;
-    }
-}
-
-/*=============== Product section Start =======================*/
 
 .custom-width-full-240 {
     width: calc(100% - 240px);
@@ -77,26 +63,8 @@ body {
     box-shadow: 0 0 0 #fff, 0 15px 30px #999;
 }
 
-
-
-/* ==================== Product page Shop section ========================= */
-
-.innovate-product-page-shop-main-parent {
-    margin-top: 64px;
-}
-
-.innovate-product-page-shop-left {
-    background: #fff;
-    width: 240px;
-}
-
 .innovate-product-page-shop-detailes {
     width: calc(100% - 250px);
-}
-
-.innovate-product-page-shop-main-parent {
-    display: flex;
-    justify-content: space-between;
 }
 
 .custom-info-width {
@@ -109,33 +77,6 @@ body {
 
 .innovate-product-page-shop-parent {
     width: calc(100% - 310px);
-}
-
-.innovate-product-page-shop-detailes-title {
-    width: 100%;
-}
-
-.innovate-product-page-shop-detailes__img-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.innovate-product-page-shop-detailes__info-ranges {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.innovate-product-page-shop-detailes__info-table thead th {
-    width: 50%;
-}
-
-
-.innovate-product-page-shop-detailes__info-shipping-details {
-    font-size: 14px;
-    font-weight: 600;
-    color: #000;
 }
 
  .innovate-tab-menu ul li button.active-a {
@@ -155,7 +96,16 @@ body {
     min-height: auto;
 }
 
+.summary-item-parent-custom-width {
+    width: calc(60% - 10px);
+}
+
+.innovate-checkout-form-item {
+    width: calc(50% - 7.5px);
+}
+
 @media screen and (max-width: 1400px) {
+    .custom-info-width,
     .innovate-product-page-shop-detailes__img,
     .innovate-product-page-shop-detailes__info {
         width: 100%;
@@ -163,53 +113,48 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-    .innovate-product-page-shop-main-parent {
-        flex-wrap: wrap;
-    }
-
     .innovate-youmaylike-product-parent {
         height: unset;
         min-height: unset;
     }
-}
 
-@media screen and (max-width: 768px) {
-    
-    .innovate-product-page-shop-left {
-        order: 2;
-        margin-top: 30px;
-    }
-    
-    .innovate-product-page-shop-left,
-    .innovate-product-page-shop-detailes {
+    .innovate-product-page-shop-parent {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 576px) {
-    .innovate-product-page-shop-detailes__info-btn-parent .info-btn-add-cart, 
-    .innovate-product-page-shop-detailes__info-btn-parent .info-btn-buy-now {
-        flex: unset;
-        margin-left: unset;
+@media screen and (max-width: 768px) {
+    .innovate-product-page-shop-detailes,
+    .custom-width-full-240 {
+        width: 100%;
     }
-}
 
+    .innovate-main-container {
+        width: 100%;
+        max-width: 100%;
+    }
 
-.innovate-cart-page {
-    margin-top: 64px;
-}
+    .innovate-hero-main-content {
+        width: 100%;
+    }
 
-.summary-item-parent-custom-width {
-    width: calc(60% - 10px);
-}
+    .innovate-left-product__parent {
+        overflow: unset;
+        height: auto;
+    }
 
-/* ==================== Checkout page section ========================= */
+    .innovate-left-product__flex {
+        height: unset;
+        min-height: unset;
+    }
 
+    .custom-scrollbar-height {
+        height: unset;
+        min-height: unset;
+    }
 
-.innovate-checkout-form-item {
-    width: calc(50% - 7.5px);
-}
-
-.innovate-cart-page__summary-cart-content .price-bold {
-    font-weight: 600;
+    .innovate-navbar__search-bar {
+        width: 100%;
+        max-width: 100%;
+    }
 }
