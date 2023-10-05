@@ -11,66 +11,69 @@
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <!-- ============= Header Start ================= -->
-    <header>
-        <nav class="innovate-navbar">
-            <div class="innovate-navbar__logo">
+    <header class="h-16 fixed top-0 left-0 right-0 z-50 bg-white max-[768px]:h-auto max-[768px]:pt-3 max-[768px]:pb-3">
+        <nav class="innovate-main-container pl-5 pr-5 max-[768px]:flex-wrap flex justify-between items-center h-full ml-auto mr-auto">
+            <div class="max-[768px]:order-1">
                 <a href="">
-                    <img src="assets/images/png-logo.png" alt="">
+                    <img class="w-[80px]" src="assets/images/png-logo.png" alt="">
                 </a>
             </div>
-            <div class="innovate-navbar__search-bar">
-                <i class="fa-solid fa-camera"></i>
-                <input type="text" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="innovate-navbar__search-bar h-[42px] bg-[#F15B29] flex items-center justify-between p-[3px] pl-4 rounded-[64px] max-[768px]:order-3 max-[768px]:w-full max-[768px]:max-w-full max-[768px]:mt-3">
+                <i class="fa-solid fa-camera text-xl text-white block pr-3.5"></i>
+                <input class="border-0 outline-0 text-white font-normal font-['Outfit'] text-sm bg-transparent placeholder:text-white placeholder:font-normal placeholder:font-['Outfit'] placeholder:text-sm grow" type="text" placeholder="Search">
+                <button class="w-16 h-[38px] rounded-[64px] bg-white flex items-center justify-center border-0 outline-0" type="submit"><i class="fa-solid fa-magnifying-glass text-[#F15B29]"></i></button>
             </div>
-            <div class="innovate-navbar__icon">
-                <a href="">
-                    <i class="fa-solid fa-cart-shopping"></i>
+            <div class="flex items-baseline max-[768px]:order-2">
+                <a href="" class="block ml-4">
+                    <i class="fa-solid fa-cart-shopping text-[28px] text-[#F15B29]"></i>
                 </a>
-                <a href="">
-                    <i class="fa-regular fa-heart"></i>
+                <a href="" class="block ml-4">
+                    <i class="fa-regular fa-heart text-[28px] text-[#F15B29]"></i>
                 </a>
-                <a href="">
-                    <i class="fa-regular fa-user"></i>
+                <a href="" class="block ml-4">
+                    <i class="fa-regular fa-user text-[28px] text-[#F15B29]"></i>
                 </a>
             </div>
         </nav>
     </header>
+    <!-- ============= Header End ================= -->
 
     <!-- ============= Cart page Start ================= -->
     <section class="innovate-main-container">
-        <div class="innovate-cart-page">
-            <div class="innovate-cart-page__top-bar">
-                <div class="innovate-cart-page__top-bar-title">
+        <div class="mt-16">
+            <div class="flex items-center justify-between bg-white border-1 border-solid border-[#eee] rounded p-4 mb-2.5">
+                <div class="flex items-center">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <h2>CART</h2>
+                    <h2 class="text-lg uppercase font-medium ml-3">CART</h2>
                 </div>
-                <div class="innovate-cart-page__top-bar-title">1 October, 2023</div>
+                <div>1 October, 2023</div>
             </div>
+            
+            <div class="flex justify-between items-start mt-2.5 mb-[100px] max-[768px]:flex-col">
+                <div class="summary-item-parent-custom-width flex flex-col bg-white max-[768px]:w-full">
 
-            <div class="innovate-cart-page__summary">
-                <div class="innovate-cart-page__summary-item-parent">
-                    <div class="innovate-cart-page__summary-item">
-                        <form action="" class="innovate-checkout-form-parent">
-                            <div class="innovate-checkout-form-item">
-                                <label for="">Name <span>*</span></label>
-                                <input type="text">
+                    <div class="border-b-[1px] border-solid border-[#f1f3f6] flex items-center justify-between py-4 px-6">
+                        <form action="" class="flex flex-wrap justify-between">
+                            <div class="innovate-checkout-form-item max-[992px]:w-full flex flex-col mb-5">
+                                <label class="text-base font-normal font-['Outfit']" for="">Name <span class="text-base font-normal font-['Outfit'] text-[red]">*</span></label>
+                                <input class="placeholder:text-base placeholder:font-normal placeholder:font-['Outfit'] focus:border-[#F15B29] text-base font-normal font-['Outfit'] py-1.5 px-3 h-10 font-medium bg-white rounded outline-0 w-full mt-2.5 border-[1px] border-solid border-[#ddd]" type="text">
                             </div>
-                            <div class="innovate-checkout-form-item">
-                                <label for="">Contact Number <span>*</span></label>
-                                <input type="text">
+                            <div class="innovate-checkout-form-item max-[992px]:w-full flex flex-col mb-5">
+                                <label for="">Contact Number <span class="text-[red] text-base font-normal font-['Outfit']">*</span></label>
+                                <input class="placeholder:text-base placeholder:font-normal placeholder:font-['Outfit'] font-['Outfit'] focus:border-[#F15B29] py-1.5 px-3 h-10 text-base font-medium bg-white rounded outline-0 w-full mt-2.5 border-[1px] border-solid border-[#ddd]" type="text">
                             </div>
-                            <div class="innovate-checkout-form-item">
-                                <label for="">Emergency Phone <span class="optional">(optional)</span></label>
-                                <input type="text">
+                            <div class="innovate-checkout-form-item max-[992px]:w-full flex flex-col mb-5">
+                                <label class="text-base font-normal font-['Outfit']" for="">Emergency Phone <span class="text-[#999] text-base font-normal font-['Outfit'] text-[#999]">(optional)</span></label>
+                                <input class="placeholder:text-base placeholder:font-normal placeholder:font-['Outfit'] focus:border-[#F15B29] text-base font-normal font-['Outfit'] py-1.5 px-3 h-10 text-base font-medium bg-white rounded outline-0 w-full mt-2.5 border-[1px] border-solid border-[#ddd]" type="text">
                             </div>
-                            <div class="innovate-checkout-form-item">
-                                <label for="">District <span>*</span></label>
-                                <select>
+                            <div class="innovate-checkout-form-item max-[992px]:w-full flex flex-col mb-5">
+                                <label class="text-base font-normal font-['Outfit']" for="">District <span class="text-base font-normal font-['Outfit'] text-[red]">*</span></label>
+                                <select class="placeholder:text-base placeholder:font-normal placeholder:font-['Outfit'] focus:border-[#F15B29] text-base font-normal font-['Outfit'] py-1.5 px-3 h-10 text-base font-medium bg-white rounded outline-0 w-full mt-2.5 border-[1px] border-solid border-[#ddd]">
                                     <option value="Dhaka">Dhaka</option>
                                     <option value="Faridpur">Faridpur</option>
                                     <option value="Gazipur">Gazipur</option>
@@ -137,83 +140,82 @@
                                     <option value="Satkhira">Satkhira</option>
                                 </select>
                             </div>
-                            <div class="innovate-checkout-form-item">
-                                <label for="">City / Upazila <span>*</span></label>
-                                <input type="text">
+                            <div class="innovate-checkout-form-item max-[992px]:w-full flex flex-col mb-5">
+                                <label class="text-base font-normal font-['Outfit']" for="">City / Upazila <span class="text-base font-normal font-['Outfit'] text-[red]">*</span></label>
+                                <input class="placeholder:text-base placeholder:font-normal placeholder:font-['Outfit'] focus:border-[#F15B29] text-base font-normal font-['Outfit'] py-1.5 px-3 h-10 text-base font-medium bg-white rounded outline-0 w-full mt-2.5 border-[1px] border-solid border-[#ddd]" type="text">
                             </div>
-                            <div class="innovate-checkout-form-item">
-                                <label for="">Address <span>*</span></label>
-                                <input type="text">
+                            <div class="innovate-checkout-form-item max-[992px]:w-full flex flex-col mb-5">
+                                <label class="text-base font-normal font-['Outfit']" for="">Address <span class="text-base font-normal font-['Outfit'] text-[red]">*</span></label>
+                                <input class="placeholder:text-base placeholder:font-normal placeholder:font-['Outfit'] focus:border-[#F15B29] text-base font-normal font-['Outfit'] py-1.5 px-3 h-10 text-base font-medium bg-white rounded outline-0 w-full mt-2.5 border-[1px] border-solid border-[#ddd]" type="text">
                             </div>
-                            <div class="innovate-checkout-form-item innovate-checkout-form-item-full">
-                                <label for="">Delivery Method <span>*</span></label>
-                                <select>
+                            <div class="innovate-checkout-form-item max-[992px]:w-full flex flex-col mb-5 w-full">
+                                <label class="text-base font-normal font-['Outfit']" for="">Delivery Method <span class="text-base font-normal font-['Outfit'] text-[red]">*</span></label>
+                                <select class="placeholder:text-base placeholder:font-normal placeholder:font-['Outfit'] focus:border-[#F15B29] text-base font-normal font-['Outfit'] py-1.5 px-3 h-10 text-base font-medium bg-white rounded outline-0 w-full mt-2.5 border-[1px] border-solid border-[#ddd]">
                                     <option value="office">Office Collection</option>
                                     <option value="courier">Courier Delivery</option>
                                 </select>
                             </div>
-                            <div class="innovate-checkout-form-item innovate-checkout-form-item-full">
-                                <label for="">Order Note <span class="optional">(Please leave a note, if you have any special instruction about your order.)</span></label>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <div class="innovate-checkout-form-item max-[992px]:w-full flex flex-col mb-5 w-full">
+                                <label class="text-base font-normal font-['Outfit'] " for="">Order Note <span class="text-[#999] text-base font-normal font-['Outfit']">(Please leave a note, if you have any special instruction about your order.)</span></label>
+                                <textarea class="placeholder:text-base placeholder:font-normal placeholder:font-['Outfit'] focus:border-[#F15B29] h-[80px] text-base font-normal font-['Outfit'] py-1.5 px-3 h-10 text-base font-medium bg-white rounded outline-0 w-full mt-2.5 border-[1px] border-solid border-[#ddd]" name="" id="" cols="30" rows="10"></textarea>
                             </div>
                         </form>
                     </div>
-                    <div class="innovate-cart-page__summary-item innovate-cart-page__summary-item-first">
-                        <div class="innovate-cart-page__summary-item-check-mark">
-                            <i class="fa-solid fa-check"></i>
+                    <div class="border-b-[1px] border-solid border-[#f1f3f6] flex items-center justify-between py-4 px-6">
+                        <div class="rounded-[50%] bg-[#F15B29] flex items-center justify-center text-base" style="min-width: 24px; min-height: 24px; width: 24px; height: 24px;">
+                            <i class="fa-solid fa-check text-white"></i>
                         </div>
-                        <div class="innovate-cart-page__summary-item-img">
-                            <img src="assets/images/product (1).jpg" alt="">
+                        <div class="ml-3 mr-4" style="min-width: 64px; min-height: 64px; width: 64px; height: 64px;">
+                            <img class="w-full h-full object-cover" src="assets/images/product (1).jpg" alt="">
                         </div>
-                        <div class="innovate-cart-page__summary-item-content">
-                            <h4>Order ID: #6518XX</h4>
-                            <p>Slippers, footwear, fashionable heel sticker, 2023 collection, suitable for import, plus
-                                size, Korean style</p>
+                        <div class="grow mr-3">
+                            <h4 class="text-sm font-medium m-0 font-['Outfit']">Order ID: #6518XX</h4>
+                            <p class="text-sm font-['Outfit'] m-0">Slippers, footwear, fashionable heel sticker, 2023 collection, suitable for import, plus size, Korean style</p>
                         </div>
-                        <div class="innovate-cart-page__summary-item-trash">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </div>
-                    </div>
-                    <div class="innovate-cart-page__summary-item">
-                        <div class="innovate-cart-page__summary-item-double-span summary-item-span-grow">
-                            <span>Color: Auspicious color</span>
-                            <span>Size: 35</span>
-                        </div>
-                        <div class="summary-item-span-grow">
-                            <span>8 x ৳441</span>
-                        </div>
-                        <div>
-                            <span>৳3528</span>
+                        <div class="w-8 h-8 rounded flex items-center justify-center bg-['#f15b2934'] cursor-pointer">
+                            <i class="fa-solid fa-trash-can text-[#F15B29]"></i>
                         </div>
                     </div>
-                    <div class="innovate-cart-page__summary-item">
-                        <div class="summary-item-span-grow">
-                            <span>Item Summary</span>
+                    <div class="border-b-[1px] border-solid border-[#f1f3f6] flex items-center justify-between py-4 px-6">
+                        <div class="flex flex-col grow">
+                            <span class="mb-1.5 text-sm">Color: Auspicious color</span>
+                            <span class="mb-1.5 text-sm">Size: 35</span>
                         </div>
-                        <div class="summary-item-span-grow">
-                            <span>8 items</span>
+                        <div class="grow">
+                            <span class="text-sm">8 x ৳441</span>
                         </div>
                         <div>
-                            <span>৳3528</span>
+                            <span class="text-sm">৳3528</span>
+                        </div>
+                    </div>
+                    <div class="border-b-[1px] border-solid border-[#f1f3f6] flex items-center justify-between py-4 px-6 ">
+                        <div class="grow">
+                            <span class="text-sm">Item Summary</span>
+                        </div>
+                        <div class="grow">
+                            <span class="text-sm">8 items</span>
+                        </div>
+                        <div>
+                            <span class="text-sm">৳3528</span>
                         </div>
                     </div>
                 </div>
-                <div class="innovate-cart-page__summary-cart">
-                    <h3 class="innovate-cart-page__summary-cart-title">Cart Summary</h3>
-                    <div class="innovate-cart-page__summary-cart-content">
-                        <div>
-                            <span>Product Price</span>
-                            <span class="price-bold">৳3528</span>
+                <div class="rounded h-[200px] w-2/5 bg-white max-[768px]:w-full">
+                    <h3 class="p-4 items-center m-0 text-lg font-semibold font-['Outfit'] border-[1px] border-solid border-[#f1f3f6]">Cart Summary</h3>
+                    <div class="innovate-cart-page__summary-cart-content p-4 rounded bg-white">
+                        <div class="flex justify-between mb-4">
+                            <span class="text-sm font-normal font-['Outfit']">Product Price</span>
+                            <span class="text-sm font-normal font-['Outfit']">৳3528</span>
                         </div>
-                        <div>
-                            <span>Pay Now (60%)</span>
-                            <span class="price-bold">৳2117</span>
+                        <div class="flex justify-between mb-4">
+                            <span class="text-sm font-normal font-['Outfit']">Pay Now (60%)</span>
+                            <span class="text-sm font-normal font-['Outfit']">৳2117</span>
                         </div>
-                        <div>
-                            <span>Pay on Delivery</span>
-                            <span>৳ 1411 + Shipping & Courier Charge</span>
+                        <div class="flex justify-between mb-4">
+                            <span class="text-sm font-normal font-['Outfit']">Pay on Delivery</span>
+                            <span class="text-sm font-normal font-['Outfit']">৳ 1411 + Shipping & Courier Charge</span>
                         </div>
-                        <button class="innovate-cart-btn" type="button">Place Order & Pay</button>
+                        <button class="flex items-center justify-center w-full p-4 outline-0 border-0 bg-[#F15B29] text-white text-[15px] font-medium font-['Outfit'] rounded-[100px] cursor-pointer max-[768px]:fixed max-[768px]:bottom-0 max-[768px]:left-0 max-[768px]:right-0 max-[768px]:rounded-none" type="button">Checkout</button>
                     </div>
                 </div>
             </div>
